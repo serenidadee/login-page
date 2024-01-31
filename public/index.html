@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="../build.css">
+</head>
+<body class="bg-indigo-100">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-blue-600 lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12">
+            <div class="flex-grow">
+                <h1 class="text-white text-center text-2xl sm:text-5xl mb-2">
+                    Seja bem-vindo!
+                </h1>
+                <p class="text-center text-blue-200 sm:text-lg">
+                    Faça seu login para começar!
+                </p>
+            </div>
+        </div>
+
+        <div class="lg:min-h-screen lg:flex lg:items-center p-12 lg:p-24 xl:p-48">
+            <div class="bg-white flex-grow shadow-xl rounded-md border border-gray-300 p-8">
+                <div class="sm:flex sm:items-center">
+                    <img src="./images/avatar.jpg" alt="avatar image" class="sm:flex-shrink-0 mx-auto sm:mx-0 h-24 rounded-full">
+                    <div class="sm:ml-4 sm:text-left text-center">
+                        <p class="text-xl">João Bezerra</p>
+                        <p class="text-sm text-gray-600">Gerente de vendas</p>
+                        <div class="mt-4">
+                            <button type="button" class="text-red-500 hover:text-white hover:bg-red-500 border boder-red-500 font-semibold rounded-md text-xs px-4 py-1 focus:outline-none">
+                                Não é João Bezzera?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="flex w-full mt-8">
+                    <input type="password" placeholder="Senha" class="flex-1 w-full text-gray-700 bg-gray-200 rounded-md hover:bg-white border border-gray-200 outline-none focus:bg-white py-2 px-4">
+                    <button type="button" class="flex-shrink-0 outline-none py-2 px-4 text-white font-semibold rounded-md bg-teal-500 hover:bg-teal-600 btn-teal ml-4">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
